@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       
+        <title>level 1</title>
+            <style>
+                .heading{
+
+
+
+font-size: 50px;
+font-family:fantasy;
+font-weight: bold;
+color: black;
+text-align: center;
+background-color: green;}
+body{
+
+    background-image:url("pp1.jpg");
+background-size: cover;
+    
+}
+.box{
+    left:300px;
+    top:100px;
+    position:absolute;
+    height:300px;
+    width: 300px;
+    border: solid 1px black;
+
+}
+.inner{
+
+    height:100px;
+    width: 100px;
+    
+    float:left;
+}
+
+.original{
+    left:715px;
+    top:100px;
+    position: absolute;
+    font-size: 20px;
+    border: solid 1px black;
+    color:white;
+    background-color: black;
+}
+.original2{
+    left:700px;
+    top:130px;
+    position: absolute;
+    font-size: 20px;
+    border: solid 1px black;
+    
+    
+}
+.butn {
+    left:700px;
+    top:300px;
+    position: relative;
+    height:50px;
+    width:100px;
+    float:left;
+}
+
+.butn2 {
+    height:30px;
+    width:80px;
+    background-color: green;
+    font-size: 20px;
+}
+.butn2:hover {
+   
+    background-color: black;
+    font-size: 20px;
+    color:white;
+}
+
+    </style>
+    <script type="text/javascript">
+		function swap(x,y)
+		{
+
+		
+			  c= document.getElementById(x).src;
+              document.getElementById(x).src=document.getElementById(y).src
+              document.getElementById(y).src=c;
+		}
+       function reset(){
+        document.getElementById("1").src="ifiltower/1.jpg";
+        document.getElementById("2").src="ifiltower/7.jpg";
+        document.getElementById("3").src="ifiltower/5.jpg";
+        document.getElementById("4").src="ifiltower/8.jpg";
+        document.getElementById("5").src="ifiltower/0.jpg";
+        document.getElementById("6").src="ifiltower/2.jpg";
+        document.getElementById("7").src="ifiltower/4.jpg";
+        document.getElementById("8").src="ifiltower/3.jpg";
+        document.getElementById("9").src="ifiltower/6.jpg";
+
+       }
+        
+	</script>
+    
+</head>
+<body>
+    <div class="heading">STAGE 1 EASY</div>
+    
+
+    <div class="box">
+        
+    
+<div class="inner"><img src="ifiltower/1.jpg" id="1" onclick='swap("1","2");'   height="100px" width="100px" ></div>
+<div class="inner"><img src="ifiltower/7.jpg" id="2" onclick='swap("2","3");' height="100px" width="100px" ></div>
+<div class="inner"><img src="ifiltower/5.jpg" id="3" onclick='swap("3","4");'  height="100px" width="100px" ></div>
+<div class="inner"><img src="ifiltower/8.jpg" id="4" onclick='swap("4","5");' height="100px" width="100px" ></div>
+<div class="inner"><img src="ifiltower/0.jpg" id="5" onclick='swap("5","6");' height="100px" width="100px" ></div>
+<div class="inner"><img src="ifiltower/2.jpg" id="6" onclick='swap("6","7");' height="100px" width="100px" ></div>
+<div class="inner"><img src="ifiltower/4.jpg" id="7" onclick='swap("7","8");' height="100px" width="100px" ></div>
+<div class="inner"><img src="ifiltower/3.jpg" id="8" onclick='swap("8","9");' height="100px" width="100px" ></div>
+<div class="inner"><img src="ifiltower/6.jpg" id="9" onclick='swap("9","1");' height="100px" width="100px" ></div>
+ </div>
+ <DIV class="original">Original image</DIV>
+ <DIV class="original2"><img src="ifil2.jpg" height="150px" width="150px"></DIV>
+ <div class="butn"><button  class="butn2"type="reset" height="50px" width="100px" value="Reset" onclick="reset();">RESET  </button></div>
+ <div class="butn"><a href="game2.html"><button  class="butn2" height="50px" width="100px" >BACK</button></a></div>
+ <div class="butn"><a href="game1.html"><button  class="butn2" height="50px" width="100px" >EXIT </button></a></div>
+
+
+</body>
+
+
+</html>

@@ -1,0 +1,91 @@
+body{
+    background-color: gray;
+}
+.heading{
+
+
+
+font-size: 50px;
+font-family:fantasy;
+font-weight: bold;
+color: black;
+text-align: center;
+background-color: green;
+
+}
+.border{
+
+  left:510px;
+  top:250px;
+  border:solid 1px black;
+  background-color: green;
+  height:250px;
+width:250px;
+position: absolute;
+border-radius:10px;
+}
+.button{
+    left: 80px;
+    top:20px;
+    background-color: green;
+    width: 150px;
+    height: 150px;
+    border-style: solid;
+    
+    border-width: 100px 0px 100px 100px;
+    border-color: green  green  green black ;
+    position:absolute;
+
+  }
+  
+  .pp{
+    margin-left:450px;
+  }
+  .div1{
+    margin-left:500px;
+margin-top:50px;
+   
+    postion:absolute;
+  }
+  .button2{
+    
+height:50px;
+width: 200px;
+background-color:green;
+color:black;
+font-weight: bold;
+  }
+  .button2:hover{
+    background-color: grey;
+  }
+  .optionsmain{
+    
+
+margin:50px;
+float:left;
+
+}
+
+  .options1{
+    left:150px;
+top:10px;
+margin:10px;
+position:relative;
+
+}
+
+  .options2{
+    
+    height:30px;
+    width: 70px;
+    background-color:green;
+    color:black;
+    font-weight: bold;}
+    .optionsimage{
+      left:100px;
+      top:50px;
+      margin:10px;
+      margin-left:100px;
+      
+      
+    }

@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DIV</title>
+    <script type="text/javascript">
+		
+		function validation()
+		{
+			var y=document.getElementById("name").value;
+			var t='';
+			var i;
+			for(i=0;i<y.length;i++)
+			{
+				if(y.charCodeAt(i)>=65 && y.charCodeAt(i)<= 90 || y.charCodeAt(i)== 90)
+
+				{
+				    t += y.charAt(i);
+				    
+				}
+				
+			}
+			document.getElementById("name").value=t;
+		}
+
+		function validation2()
+		{
+			var y=document.getElementById("email").value;
+			var t='';
+			var i;
+			for(i=0;i<y.length;i++)
+			{
+				if(y.charCodeAt(i)>=48 && y.charCodeAt(i)<= 122 || y.charCodeAt(i)===32)
+				
+				{
+				    t += y.charAt(i);
+				    
+				}
+				
+			}
+			document.getElementById("email").value=t;
+		}
+		
+		
+		function validation3()
+		{
+			var y=document.getElementById("password").value;
+			var t='';
+			var i;
+			for(i=0;i<y.length;i++)
+			{
+				if(y.charCodeAt(i)>=32 && y.charCodeAt(i)<= 122 && y.charCodeAt(i)!=32)
+				
+				{
+				    t += y.charAt(i);
+				    
+				}
+				
+			}
+			document.getElementById("password").value=t;
+		}
+		function validation4()
+		{
+			var y=document.getElementById("address").value;
+			var t='';
+			var i;
+			for(i=0;i<y.length;i++)
+			{
+				if(y.charCodeAt(i)>=48 && y.charCodeAt(i)<= 122 || y.charCodeAt(i)==32)
+				
+				{
+				    t += y.charAt(i);
+				    
+				}
+				
+			}
+			document.getElementById("address").value=t;
+		}
+
+		function validation5()
+		{
+			var y=document.getElementById("number").value;
+			var t='';
+			var i;
+			for(i=0;i<y.length;i++)
+			{
+				if(y.charCodeAt(i)>=48 && y.charCodeAt(i)<= 57 && y.charCodeAt(i)!=32)
+				
+				{
+				    t += y.charAt(i);
+				    
+				}
+				
+			}
+			document.getElementById("number").value=t;
+		}
+
+		
+		
+		
+		
+	function val()
+		{
+			var name = document.getElementById("name").value;
+			var password = document.getElementById("password").value;
+			var cpassword = document.getElementById("cpassword").value;
+            var email = document.getElementById("email").value;
+			var cpassword = document.getElementById("cpassword").value;
+            var address = document.getElementById("address").value;
+            var number = document.getElementById("number").value;
+			
+			if(name=='')
+			{
+				alert("Please Insert User Name");
+				document.getElementById("name").focus();
+				exit();
+				return false;
+			}
+            if(email=='')
+			{
+				alert("enter email");
+				document.getElementById("email").focus();
+				exit();
+			}
+			if(password=='')
+			{
+				alert("Please Insert Password");
+				document.getElementById("password").focus();
+				exit();
+			}
+			if(password.length > 15 ||  password.length<2)
+			{
+				alert("Password Should be between 5 to 15");
+				document.getElementById("password").focus();
+				exit();
+			}
+			if(cpassword=='')
+			{
+				alert("Please Insert Confirm Password");
+				document.getElementById("cpassword").focus();
+				exit();
+			}
+
+
+			if(password!=cpassword)
+			{
+				alert("Confirm Password should be same as Password");
+				document.getElementById("cpassword").focus();
+				exit();
+			}
+
+            
+			
+            if(document.getElementById("mca").checked==false && document.getElementById("bca").checked==false && document.getElementById("btech").checked==false) 
+			{
+				alert("ENTER QUALIFICATIONS"); 
+				
+				exit();
+			}
+
+            
+
+
+            
+            if(address=='')
+			{
+				alert("ENTER address");
+				document.getElementById("address").focus();
+				exit();
+			}
+
+            if(number='')
+			{
+				alert("ENTER  Mobile NUMBER");
+				document.getElementById("number").focus();
+			
+				exit();
+
+			}
+			
+
+
+			
+			
+			
+		}
+
+		function country()
+		{
+			var country = document.getElementById("ddcountry").value;
+			var indiastate = document.getElementById("ddindstate").value;
+           
+			if(country==0)
+			{
+				alert("Please Select Any Country");
+				document.getElementById("ddcountry").focus();
+				exit();
+			}
+			if(country==1)
+			{
+				document.getElementById("ddindstate").style.display = 'block';
+				document.getElementById("ddusastate").style.display = 'none';
+				document.getElementById("ddukstate").style.display = 'none';
+			}
+			if(country==2)
+			{
+				document.getElementById("ddindstate").style.display = 'none';
+				document.getElementById("ddusastate").style.display = 'block';
+				document.getElementById("ddukstate").style.display = 'none';
+			}
+			if(country==3)
+			{
+				document.getElementById("ddindstate").style.display = 'none';
+				document.getElementById("ddusastate").style.display = 'none';
+				document.getElementById("ddukstate").style.display = 'block';
+			}
+	 }
+		
+	</script>
+	<link href="div.css" type="text/css" rel="stylesheet">
+</head>
+<body class="front">
+<form  action="test1.html" method="get" target="_blank">
+<div class="h1">AIMCET</div>
+<div class="h2">ALL INDIA MCA COMMON ENTERANCE TEST</div>
+<div class="main2">
+<div class="main">
+<div class="text">Name</div>
+<div class="place"><input type="text" id="name" placeholder="e.g.,RAM KUMAR SHARMA" onkeyup="validation();"></div>
+</div>
+
+<div class="main">
+<div class="text">Email-Id</div>
+<div class="place"><input type="text" id="email" placeholder="e.g.,abc@gmail.com" onkeyup="validation2();"></div>
+</div>
+
+<div class="main">
+<div class="text">Password</div>
+<div class="place"><input type="password"  id="password"placeholder="pwd btw 5 to 20 char" onkeyup="validation3();"></div>
+</div>
+
+<div class="main">
+<div class="text">Confirm Password</div>
+<div class="place"><input type="password" id="cpassword"placeholder="re-enter pwd"  ></div>
+</div>
+
+<div class="main">
+<div class="text">Gender</div>
+<div class="place"><input type="radio"  id="gender" value="0">MALE
+	<input type="radio"  id="gender" value="0">FEMALE
+					</div></div>
+
+<div class="main">
+<div class="text">Qualifications</div>
+<div class="place"><input type="checkbox"  id="mca" value="0">MCA
+	<input type="checkbox" id="bca" value="1" >BCA
+	<input type="checkbox" id="btech" value="2" >B-Tech
+		</div>
+</div>
+
+<div class="main">
+<div class="text">Country</div>
+<div class="place">
+	 <select id="ddcountry" onchange='country();'>
+		<option value="0">---Select Country---</option>
+		<option value="1">INDIA</option>
+		<option value="2">USA</option>
+		<option value="3">UK</option>
+	</select>
+	
+   			</div>
+</div>
+
+<div class="main">
+<div class="text">State</div>
+<div class="place">
+     <select id="ddindstate" style="display: none;">
+		<option value="0">---Select State---</option>
+		<option value="1">UP</option>
+		<option value="2">MP</option>
+		<option value="3">HP</option>
+		 </select>
+		
+		<select id="ddusastate" style="display: none;">
+		<option value="0">---Select State---</option>
+		<option value="1">USA1</option>
+		<option value="2">USA2</option>
+		<option value="3">USA3</option>
+		</select>
+	
+		<select id="ddukstate" style="display: none;">
+		<option value="0">---Select State---</option>
+		<option value="1">UK1</option>
+		<option value="2">UK2</option>
+		<option value="3">UK3</option>
+	</select>
+   		<br>	
+   		</div>
+</div>
+
+<div class="main">
+<div class="text">Address</div>
+<div class="place"><input type="text" id="address" onkeyup="validation4();">
+   	</div>
+</div>
+
+<div class="main">
+<div class="text">Phone Number</div>
+<div class="place"><input type="text" placeholder="" id="number"onkeyup="validation5();"></div>
+</div>
+
+
+<div class="main">
+<div class="submit"><button  style="height:50px;width:250px;" onclick="val();">SUBMIT</button></div>
+
+</div>
+
+
+</form>
+
+</body>
+</html>

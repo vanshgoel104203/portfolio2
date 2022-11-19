@@ -1,0 +1,142 @@
+
+.screen{
+    
+    height: 500px;
+    width: 575px;
+    border: solid 1px black;
+    background-color: grey;
+    
+    border-width: 50px 50px 100px 50px;
+    border-color: rgb(44, 43, 43)  rgb(44, 43, 43) grey rgb(44, 43, 43);
+    
+   
+   margin:auto
+}
+.border1 {
+    height: 275px;
+    width: 573px;
+   
+   position: absolute;
+    
+    background-color: #0d0d0e;
+}
+.account {
+    position: absolute;
+    z-index: 0;
+    color: rgb(228, 228, 217);
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    height: 100px;
+    width: 581px;
+    font-size:1.5rem;
+   
+}
+
+.accountnumber {
+   text-align: center;
+   color:white;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   
+}
+
+    .amount {
+        
+        z-index: 0;
+        color: red;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        font-size: 1.3rem;
+    }
+    .amount button{
+text-align: center;
+        height:3vw;
+        width:9vw;
+        background-color: grey;
+    color: white;
+    font-weight: bolder;
+    font-size: 1.5vw;
+    border: none;
+    }
+
+    .amount button:hover{
+        background-color:maroon;
+        BORDER:solid .2vw black;
+    }
+    .amount input{
+
+        border: none;
+        height:2vw;
+        width:20vw;
+    }
+.front{
+   
+        left:27%;
+        position:absolute;
+        top:11%;
+       
+}
+
+.deposit button {
+    background-color: rgb(139, 7, 7);
+    color: white;
+    top: 180px;
+    left: 360px;
+   position: absolute;
+    height: 57px;
+    width: 184px;
+    font-weight: bolder;
+    font-size: 1.5vw;
+    border: none;
+}
+
+.deposit button:hover{
+    background-color:maroon;
+    BORDER:solid .2vw black;
+}
+
+
+
+.cash3{
+    height: 2vw;
+    width: 15vw;
+    background-color: black;
+    top: 27vw;
+    left: 14vw;
+    position: absolute;
+    font-size: 1.5vw;
+    font-weight: bold;
+}
+
+.thousand input{
+    width:100px;
+margin: 25px;
+height: 30px;
+border-radius: 2px;
+  
+}
+
+.thousand img{
+height:100px;
+width:100px;
+margin: 30px;
+   
+}
+.money{
+    position:relative;
+    top:250px;
+    left:50px;
+   
+}
+.money2{
+    position:relative;
+    top:250px;
+    left:50px;
+}
+.success{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+   
+}
